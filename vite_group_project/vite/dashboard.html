@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <!-- <div id="app"></div> -->
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <!-- left -->
+    <section class="WB-left">
+      <nav class="WB-nav">
+        <h4 class="WB-nav-title">一碳究境</h4>
+        <ul class="WB-nav-ul">
+          <li class="WB-nav-ul-li WB-nav-ul-li-active"><div class="WB-nav-ul-li-div"><i class="fa-solid fa-square-poll-vertical"></i></div><span>儀表板</span></li>
+          <li class="WB-nav-ul-li"><div class="WB-nav-ul-li-div"><i class="fa-solid fa-user"></i></div><span>用戶管理</span></li>
+          <li class="WB-nav-ul-li"><div class="WB-nav-ul-li-div"><i class="fa-regular fa-newspaper"></i></div><span>內容管理</span></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- right -->
+    <section class="WB-right">
+      <!-- header -->
+      <header class="WB-header">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img src="./src/assets/images/header-avator.png" alt="">
+      </header>
+
+      <!-- wrapper -->
+      <div class="WB-right-wrapper">
+
+        <!-- article區塊 -->
+        <article class="WB-article">
+          <div class="WB-article-div">
+            <h4 class="WB-article-div-h4">歡迎來到後台管理系統</h4>
+            <p class="WB-article-div-p">這裡是管理系統的主控台，您可以檢視數據、管理內容，並快速前往前台檢視網站運作情況。</p>
+            <div class="WB-btn-check">前往前台查看</div>
+          </div>
+          <div><img src="./src/assets/images/article-tree.png" alt=""></div>
+        </article>
+        <!-- 圓餅圖 -->
+        <div class="WB-card-dougnut">
+          <div class="WB-card-dougnut-top">
+            <div class="WB-card-dougnut-top-text">
+              <p class="WB-card-dougnut-top-text-title">交通工具占比</p>
+              <p class="WB-card-dougnut-top-text-content">本月累積總減少碳排放量</p>
+            </div>
+          </div>
+          <div class="doughnut"><img style="max-width: 710px;" src="./src/assets/images/dougnut.png" alt=""></div>
+        </div>
+        <!-- 右側載具卡片-->
+        <div class="WB-right-column">
+          <!-- 公車 -->
+          <div class="WB-card-transportation">
+            <div class="WB-card-transportation-top">
+              <div class="WB-card-transportation-top-text">
+                <p class="WB-card-transportation-top-text-title">公車</p>
+              </div>
+              <div class="WB-card-transportation-top-icon">
+                <i class="fa-solid fa-bus"></i>
+              </div>
+            </div>
+
+            <div class="WB-card-transportation-note">
+              <div>
+                <p>減少排出量(kgCO2e)</p>
+                <p class="bus-carbon WB-card-transportation-note-big">4,600</p>
+              </div>
+              <div>
+                <p>占比</p>
+                <p class="bus-carbon-percent WB-card-transportation-note-big">46%</p>
+              </div>
+            </div>
+          </div>
+          <!-- 捷運 -->
+          <div class="WB-card-transportation">
+            <div class="WB-card-transportation-top">
+              <div class="WB-card-transportation-top-text">
+                <p class="WB-card-transportation-top-text-title">捷運</p>
+              </div>
+              <div class="WB-card-transportation-top-icon">
+                <i class="fa-solid fa-train-subway"></i>
+              </div>
+            </div>
+
+            <div class="WB-card-transportation-note">
+              <div>
+                <p>減少排出量(kgCO2e)</p>
+                <p class="MRT-carbon WB-card-transportation-note-big">3,800</p>
+              </div>
+              <div>
+                <p>占比</p>
+                <p class="MRT-carbon-percent WB-card-transportation-note-big">38%</p>
+              </div>
+            </div>
+          </div>
+          <!-- 腳踏車 -->
+          <div class="WB-card-transportation">
+            <div class="WB-card-transportation-top">
+              <div class="WB-card-transportation-top-text">
+                <p class="WB-card-transportation-top-text-title">腳踏車</p>
+              </div>
+              <div class="WB-card-transportation-top-icon">
+                <i class="fa-solid fa-bicycle"></i>
+              </div>
+            </div>
+
+            <div class="WB-card-transportation-note">
+              <div>
+                <p>減少排出量(kgCO2e)</p>
+                <p class="bike-carbon WB-card-transportation-note-big">1,600</p>
+              </div>
+              <div>
+                <p>占比</p>
+                <p class="bike-carbon-percent WB-card-transportation-note-big">16%</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!-- line chart 走勢圖 -->
+        <div class="WB-card-line-chart">
+          <div class="WB-card-line-chart-top">
+            <div class="WB-card-line-chart-top-text">
+              <p class="WB-card-line-chart-top-text-title">減少碳排放走勢圖</p>
+              <p class="WB-card-line-chart-top-text-content">以每月減少碳排與年度所減少碳排，協助您掌握減少的碳排放量情況。</p>
+            </div>
+          </div>
+          <div class="line-chart">
+            <img src="./src/assets/images/line.png" alt="">
+          </div>
+        </div>
+
+        <!-- bar 捐款金額明細表 -->
+        <div class="WB-card-bar-chart">
+          <div class="WB-card-bar-chart-top">
+            <div class="WB-card-bar-chart-top-text">
+              <p class="WB-card-bar-chart-top-text-title">捐款金額報表</p>
+              <p class="WB-card-bar-chart-top-text-content">以每月金額明細與年度金額總計，協助您直觀掌握客戶捐款概況。</p>
+            </div>
+            <div class="WB-card-bar-chart-top-text2">
+              <p class="WB-card-bar-chart-top-text2-content">820400元</p>
+            </div>
+          </div>
+          <div class="bar-chart">
+            <img src="./src/assets/images/bar.png" alt="">
+          </div>
+        </div>
+        <!-- 右側登入人數 -->
+        <div class="WB-right-column">
+          <!-- GA 網站瀏覽人數 -->
+          <div class="WB-card-people-count">
+            <div class="WB-card-people-count-top">
+              <div class="WB-card-people-count-top-text">
+                <p class="WB-card-people-count-top-text-title">瀏覽網站日人數</p>
+              </div>
+            </div>
+            <p class="WB-card-people-count-btext">
+              93
+            </p>
+            <p class="WB-card-people-count-note">
+              <i style="color: rgba(68, 133, 105, 1);" class="fa-solid fa-arrow-trend-up"><span style="color: rgba(68, 133, 105, 1);">&nbsp 23%</span></i> 相較於上一時間單位
+            </p>
+          </div>
+          <!-- GA 網站登入人數 -->
+          <div class="WB-card-people-count">
+            <div class="WB-card-people-count-top">
+              <div class="WB-card-people-count-top-text">
+                <p class="WB-card-people-count-top-text-title">本月新增會員數量</p>
+              </div>
+            </div>
+            <p class="WB-card-people-count-btext">
+              12%
+            </p>
+            <p class="WB-card-people-count-note">
+              <i style="color: rgba(133, 68, 68, 1)" class="fa-solid fa-arrow-trend-down"><span style="color: rgba(133, 68, 68, 1);">&nbsp 8%</span></i> 相較於上月
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!-- 5 種 button -->
+<!-- <div class="WB-btn-save"><span>儲存</span></div>
+    <div class="WB-btn-news"><div><i class="fa-solid fa-plus"></i></div><span>新增新聞</span></div>
+    <div class="WB-btn-file"><span>選擇檔案</span></div>
+    <div class="WB-btn-search"><div><i class="fa-solid fa-magnifying-glass"></i></div><span>查詢</span></div>
+    <div class="WB-btn-check"><span>前往前台查看</span></div> -->

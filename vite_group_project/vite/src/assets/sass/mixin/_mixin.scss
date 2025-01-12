@@ -1,0 +1,23 @@
+//寫在_mixin.scss
+@mixin m() {
+    @media screen and (max-width: $m) {
+      //手機
+      @content;
+  }
+}
+
+@mixin btn($top-down,$right-left,$font-size,$color,$bg-color,$radius,$bd-color,$max-width){
+  padding: $top-down $right-left;
+  font-size: $font-size;
+  color:$color;
+  background-color: $bg-color;
+  border-radius: $radius;
+  border: 1px solid #{$bd-color};
+  max-width: $max-width;
+  width: 100%;
+}
+
+@mixin card($max-width){
+  max-width: $max-width;
+  width: 100%;
+}

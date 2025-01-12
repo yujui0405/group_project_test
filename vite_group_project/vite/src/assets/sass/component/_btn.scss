@@ -1,0 +1,48 @@
+$btn-types: (save,13px,15px,$WB-text,$white,$dark-green,6px,$light-gray,107px), 
+            (news,12px,24px,1.8rem,$dark-green,$white,8px,$dark-green,146px), 
+            (file,13px,15px,$WB-text,$light-gray,$normal-gray,6px,$light-gray,115px), 
+            (search,12px,24px,1.8rem,$white,$dark-green,8px,$dark-green,112px), 
+            (check,6px,12px,$WB-text,$white,$black,24px,$black,122px);
+@each $btn-type in $btn-types{
+    $type: nth($btn-type,1);
+    $top-down:nth($btn-type,2);
+    $right-left:nth($btn-type,3);
+    $font-size:nth($btn-type,4);
+    $color:nth($btn-type,5);
+    $bg-color:nth($btn-type,6);
+    $radius:nth($btn-type,7);
+    $bd-color:nth($btn-type,8);
+    $max-width:nth($btn-type,9);
+
+    .WB-btn-#{$type}{
+        @include btn($top-down,$right-left,$font-size,$color,$bg-color,$radius,$bd-color,$max-width);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        cursor: pointer;
+        text-align: center;
+        transition: all .5s ease;
+        div{
+            text-align: center;
+            font-size: $note;
+        }
+        @if $type == search{
+            &:hover{
+                background-color: #578B87;
+            }
+            &:active{
+                background-color: #03423D;
+            }
+        }@else if $type == news{
+            &:hover{
+                background-color: #F2F7F4;
+            }
+            &:active{
+                background-color: #CDEDDA;
+            }
+        }
+    }
+
+    
+}

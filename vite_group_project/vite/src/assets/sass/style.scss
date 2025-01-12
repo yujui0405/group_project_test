@@ -1,0 +1,36 @@
+@import url('https://static.zeoseven.com/zsft/303/main/result.css');
+//引用變數
+@import 'base/base';
+
+@import 'mixin/mixin';
+
+@import 'component/component';
+
+@import 'layout/layout';
+
+@import 'page/page';
+
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+}
+body{
+	max-width:1440px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: $font-cn,$font-en,$font-enF,sans-serif;
+	font-size:1.8rem; //電腦版文字大小基底18px
+	line-height: 150%;
+	background-color: rgba(237, 252, 243, .8);
+	@include m(){
+		font-size:1.6rem;  //手機版文字大小基底16px
+	}
+}
+.WB-article img{
+	max-width: 150px;
+	width: 100%;
+}

@@ -1,0 +1,21 @@
+.WB-article{
+    max-width: 1120px;
+    width: 100%;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $light-yellow;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    &-div{
+        &-h4{
+            margin-top: 14px;
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+        &-p{
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+    }
+}
