@@ -2,15 +2,15 @@ import { createRouter, createWebHistory } from "vue-router"
 
 //path -> component
 const routes = [
-    {
-        path:'/',
-        name: 'Home',
-        component: () => import('@/pages/Home.vue'),
-        meta:{
-            title:'首頁',
-            requiredLogin: false
-        }
-    },
+    // {
+    //     path:'/',
+    //     name: 'Home',
+    //     component: () => import('@/pages/Home.vue'),
+    //     meta:{
+    //         title:'首頁',
+    //         requiredLogin: false
+    //     }
+    // },
     {
         path:'/Dashboard',
         name: 'Dashboard',
