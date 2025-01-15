@@ -13,6 +13,27 @@ $btn-types: (save,13px,15px,$WB-text,$white,$dark-green,6px,$light-gray,107px),
     $radius:nth($btn-type,7);
     $bd-color:nth($btn-type,8);
     $max-width:nth($btn-type,9);
+    //  註解是老師做法
+    // .WB-btn{
+    //     &.-type-file{
+
+    //     }
+    // }
+
+    // .WB-btn{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap:10px;
+    //     cursor: pointer;
+    //     text-align: center;
+    //     transition: all .5s ease;
+
+    //     &.-type-file{
+
+    //     }
+    // }
+    
 
     .WB-btn-#{$type}{
         @include btn($top-down,$right-left,$font-size,$color,$bg-color,$radius,$bd-color,$max-width);
